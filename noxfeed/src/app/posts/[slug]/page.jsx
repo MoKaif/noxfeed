@@ -4,7 +4,7 @@ import Image from "next/image";
 import Comments from "@/components/comments/Comments";
 
 const getData = async (slug) => {
-  const res = await fetch(`http://127.0.0.1:3000/api/posts/${slug}`, {
+  const res = await fetch(`https://noxfeed.vercel.app/api/posts/${slug}`, {
     cache: "no-store",
   });
 
