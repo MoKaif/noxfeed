@@ -14,7 +14,7 @@ const Featured = () => {
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>
-            Valorant Franchising Changes and Roster Shakeup: What's Happening in
+            Valorant Franchising Changes and Roster Shakeup: What is Happening in
             VCT 2024?
           </h1>
           <p className={styles.postDesc}>

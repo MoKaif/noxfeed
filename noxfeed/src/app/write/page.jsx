@@ -13,10 +13,11 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
 
 const WritePage = () => {
   const { status } = useSession();
+  const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
@@ -103,7 +104,10 @@ const WritePage = () => {
         className={styles.input}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <select className={styles.select} onChange={(e) => setCatSlug(e.target.value)}>
+      <select
+        className={styles.select}
+        onChange={(e) => setCatSlug(e.target.value)}
+      >
         <option value="games">Games</option>
         <option value="music">Music</option>
         <option value="movies">Movies</option>

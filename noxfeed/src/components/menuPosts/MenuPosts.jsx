@@ -15,7 +15,7 @@ const MenuPosts = ({ withImage }) => {
         <div className={styles.textContainer}>
           <span className={`${styles.category} ${styles.travel}`}>Music</span>
           <h3 className={styles.postTitle}>
-          Tyler, the Creator's 'IGOR': A Genre-Bending Masterpiece
+          Tyler, the Creator IGOR: A Genre-Bending Masterpiece
           </h3>
           <div className={styles.detail}>
             <span className={styles.username}>Md. Kaif</span>
