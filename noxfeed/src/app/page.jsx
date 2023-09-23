@@ -16,6 +16,7 @@ export default function Home({ searchParams }) {
         <CardList page={page}/>
         <Menu />
       </div>
+      {/* check */}
     </div>
   );
 }
